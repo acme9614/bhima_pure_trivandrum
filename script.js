@@ -14,66 +14,64 @@ function closeDrawer() {
 
 
 // drawers menu
-
 function navigateToScheme() {
-  Toaster.postMessage("navigateToScheme");
-}
+    Toaster.postMessage('navigateScheme');
+  }
+  
+  function navigateToBankDetails() {
+    Toaster.postMessage('navigateBankDetails');
+  }
+  
+  function navigateToKyc() {
+    Toaster.postMessage('navigateKyc');
+  }
+  
+  function navigateToRate() {
+    Toaster.postMessage('navigateRate');
+  }
+  
+  function navigateSchemeRecords() {
+    Toaster.postMessage('navigateSchemeRecords');
+  }
+  
+  function navigateToCustomerCard() {
+    Toaster.postMessage('navigateCustomerCard');
+  }
 
-function navigateToBankDetails() {
-  Toaster.postMessage("navigateBankDetails");
-}
+  function navigateTransactionHistory() {
+    Toaster.postMessage('navigateTransactionHistory');
+  }
 
-function navigateToKyc() {
-  Toaster.postMessage("navigateKyc");
-}
+  function navigateToMyOrder() {
+    Toaster.postMessage('navigateToMyOrder');
+  }
 
-function navigateToRate() {
-  Toaster.postMessage("navigateRate");
-}
+  function navigateToUserProfile() {
+    Toaster.postMessage('navigateToUserProfile');
+  }
 
-function navigateSchemeRecords() {
-  Toaster.postMessage("navigateSchemeRecords");
-}
+  function navigateToDigitalGold() {
+    Toaster.postMessage('navigateToDigitalGold');
+  }
 
-function navigateToCustomerCard() {
-  Toaster.postMessage("navigateToCustomerCard");
-}
+  function navigateToPanchang() {
+    Toaster.postMessage('navigateToPanchang');
+  }
 
-function navigateTransactionHistory() {
-  Toaster.postMessage("navigateTransactionHistory");
-}
+  function navigateToFeedback() {
+    Toaster.postMessage('navigateToFeedback');
+  }
 
-function navigateToMyOrder() {
-  Toaster.postMessage("navigateToMyOrder");
-}
+  function navigateToSetting() {
+    Toaster.postMessage('navigateToSetting');
+  }
 
-function navigateToUserProfile() {
-  Toaster.postMessage("navigateToUserProfile");
-}
-
-function navigateToDigitalGold() {
-  Toaster.postMessage("navigateToDigitalGold");
-}
-
-function navigateToPanchang() {
-  Toaster.postMessage("navigateToPanchang");
-}
-
-function navigateToFeedback() {
-  Toaster.postMessage("navigateToFeedback");
-}
-
-function navigateToSetting() {
-  Toaster.postMessage("navigateToSetting");
-}
-
-function setUserName(username) {
-  // Find the element by ID and set the text content
-  document.getElementById("user-name-display").innerText =
-    "Welcome, " + username;
+  function setUserName(username) {
+    // Find the element by ID and set the text content
+    document.getElementById("user-name-display").innerText = "Welcome, " + username;
 }
 function navigateToHomePage() {
-  Toaster.postMessage("navigateToHomePage");
+    Toaster.postMessage('navigateToHomePage');
 }
 
 
