@@ -273,6 +273,117 @@
         </p>
       </section>
 
+ <!-- services -->
+<section class="bg-white py-4 px-4">
+  <!-- First Row -->
+  <div class="max-w-6xl mx-auto grid grid-cols-4  lg:grid-cols-5 gap-4 justify-center place-items-center">
+    <!-- Card 1 -->
+    <div onclick="navigateToScheme()"
+      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/128/157/157358.png" alt="Scheme"
+        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
+      <span class="text-sm font-normal md:font-medium">Scheme</span>
+    </div>
+
+    <!-- Card 2 -->
+    <div onclick="navigateToBankDetails()"
+      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/128/2830/2830155.png" alt="Bank"
+        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
+      <span class="text-sm font-normal md:font-medium">Bank</span>
+    </div>
+
+    <!-- Card 3 -->
+    <div onclick="navigateToKyc()"
+      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/128/18281/18281942.png" alt="KYC"
+        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
+      <span class="text-sm font-normal md:font-medium">KYC</span>
+    </div>
+
+    <!-- Card 4 -->
+    <div onclick="navigateToRate()"
+      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/128/592/592015.png" alt="Rate"
+        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
+      <span class="text-sm font-normal md:font-medium">Rate</span>
+    </div>
+
+    <!-- Card 5 -->
+    <div onclick="navigateSchemeRecords()"
+      class="hidden lg:flex flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/128/2910/2910768.png" alt="Records"
+        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
+      <span class="text-sm font-normal md:font-medium">Records</span>
+    </div>
+  </div>
+
+  <!-- Extra Cards (Hidden Initially) -->
+  <div id="moreCards"
+    class="max-w-6xl mx-auto grid grid-cols-4  lg:grid-cols-5 gap-4 justify-center place-items-center mt-4 transition-all duration-500 ease-in-out"
+    style="max-height: 0; opacity: 0;">
+    <!-- Card 5 -->
+     <div onclick="navigateSchemeRecords()"
+      class=" lg:hidden flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/128/2910/2910768.png" alt="Records"
+        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
+      <span class="text-sm font-normal md:font-medium">Records</span>
+    </div>
+
+    <!-- Card 6 -->
+    <div onclick="navigateToCustomerCard()"
+      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/128/423/423519.png" alt="Card"
+        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
+      <span class="text-sm font-normal md:font-medium">Card</span>
+    </div>
+
+    <!-- Card 7 -->
+    <div onclick="navigateTransactionHistory()"
+      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/128/3503/3503786.png" alt="History"
+        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
+      <span class="text-sm font-normal md:font-medium">History</span>
+    </div>
+
+    <!-- Card 8 -->
+    <div onclick="navigateToMyOrder()"
+      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/128/4556/4556009.png" alt="Order"
+        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
+      <span class="text-sm font-normal md:font-medium">Order</span>
+    </div>
+
+    <!-- Card 9 -->
+    <div onclick="navigateToUserProfile()"
+      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="profile"
+        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
+      <span class="text-sm font-normal md:font-medium">Profile</span>
+    </div>
+
+    <!-- Card 10 -->
+    <div onclick="navigateToSetting()"
+      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/128/503/503822.png" alt="Book My Gold"
+        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
+      <span class="text-sm font-normal md:font-medium">Settings</span>
+    </div>
+  </div>
+
+  <!-- Toggle Button -->
+  <div class="text-center mt-2">
+    <button onclick="toggleCards()" id="toggleButton"
+      class="text-[#8D5B46] hover:text-black transition">
+      <svg class="w-6 h-6 mx-auto animate-bounce" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+      <span class="text-sm font-medium mt-1 block">Show More</span>
+    </button>
+  </div>
+</section>
+
       <!-- Our Collections Slider -->
       <section class="px-4 lg:px-16 py-5 relative">
         <h2 class="text-2xl md:text-3xl font-heading text-center mb-8">
@@ -830,7 +941,7 @@
           class="max-w-6xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start"
         >
           <!-- Social Icons -->
-          <div class="flex flex-col items-center gap-4 mt-4 md:mt-0 md:mb-10">
+          <div class="flex flex-col items-center justify-center h-full gap-4 mt-4 md:mt-0 md:mb-10">
             <!-- Center: Logo -->
             <div class="">
               <a href="#" class="flex items-center space-x-2">
@@ -841,48 +952,7 @@
                 />
               </a>
             </div>
-            <div class="flex flex-wrap items-center gap-4 mt-4 md:mt-0">
-              <!-- Facebook -->
-              <a
-                href="https://www.facebook.com/bhimatvm"
-                target="_blank"
-                class="text-white text-2xl  transition bg-[#3B5997] p-3 rounded-full"
-              >
-                <i class="fab fa-facebook"></i>
-              </a>
-              <!-- Instagram -->
-              <a
-                href="https://www.instagram.com/bhimajewelleryofficial/"
-                target="_blank"
-                class="text-white text-2xl  transition bg-[#262626] p-3 rounded-full"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-              <!-- YouTube -->
-              <a
-                href="https://www.youtube.com/channel/UCbFHMVN32JmvwUmA8ap5WEA"
-                target="_blank"
-                class="text-white text-2xl transition bg-[#CD201F] p-3 rounded-full"
-              >
-                <i class="fab fa-youtube"></i>
-              </a>
-              <!-- Pinterest -->
-              <a
-                href="https://in.pinterest.com/bhimatower/pins/"
-                target="_blank"
-                class="text-white text-2xl transition bg-[#BD081C] p-3 rounded-full"
-              >
-                <i class="fab fa-pinterest"></i>
-              </a>
-              <!-- WhatsApp -->
-              <a
-                href="https://wa.me/917356479337?text=Hi%2C%20I%27ve%20an%20enquiry%20regarding%20Bhima%20Jewellery%20Collections"
-                target="_blank"
-                class="text-white text-2xl  transition bg-[#25D366] p-3 rounded-full"
-              >
-                <i class="fab fa-whatsapp"></i>
-              </a>
-            </div>
+            
           </div>
 
           <!-- Contact Details -->

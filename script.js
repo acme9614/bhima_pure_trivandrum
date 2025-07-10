@@ -124,6 +124,24 @@ const collectionSwiper = new Swiper(".collectionSwiper", {
 });
 
 
+// drawertabs 
+  function toggleCards() {
+    const moreCards = document.getElementById("moreCards");
+    const button = document.getElementById("toggleButton");
+    const isVisible = moreCards.style.maxHeight !== "0px" && moreCards.style.maxHeight !== "";
+
+    if (isVisible) {
+      moreCards.style.maxHeight = "0";
+      moreCards.style.opacity = "0";
+      button.querySelector("span").innerText = "Show More";
+    } else {
+      moreCards.style.maxHeight = "1000px";
+      moreCards.style.opacity = "1";
+      button.querySelector("span").innerText = "Show Less";
+    }
+  }
+
+
 // tabsSwiper 
 
       const tabSwiper = new Swiper(".tabsSwiper", {
