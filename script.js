@@ -17,6 +17,16 @@ function closeDrawer() {
 function navigateToScheme() {
     Toaster.postMessage('navigateScheme');
   }
+
+  
+function navigateToCatalogues() {
+  Toaster.postMessage("navigateToCatalogues");
+}
+
+function navigateToQuickPurchase() {
+  Toaster.postMessage("navigateToQuickPurchase");
+}
+
   
   function navigateToBankDetails() {
     Toaster.postMessage('navigateBankDetails');
@@ -124,41 +134,41 @@ const collectionSwiper = new Swiper(".collectionSwiper", {
 });
 
 
-// drawertabs 
-  function toggleCards() {
-    const moreCards = document.getElementById("moreCards");
-    const button = document.getElementById("toggleButton");
-    const isVisible = moreCards.style.maxHeight !== "0px" && moreCards.style.maxHeight !== "";
+// drawertabs  
+  let expanded = false;
+  function toggleBoxes() {
+    const container = document.getElementById("boxContainer");
+    const arrow = document.getElementById("arrowIcon");
 
-    if (isVisible) {
-      moreCards.style.maxHeight = "0";
-      moreCards.style.opacity = "0";
-      button.querySelector("span").innerText = "Show More";
+    if (!expanded) {
+      container.classList.remove("max-h-[13.5rem]");
+      arrow.classList.add("rotate-180");
+      expanded = true;
     } else {
-      moreCards.style.maxHeight = "1000px";
-      moreCards.style.opacity = "1";
-      button.querySelector("span").innerText = "Show Less";
+      container.classList.add("max-h-[13.5rem]");
+      arrow.classList.remove("rotate-180");
+      expanded = false;
     }
   }
 
 
 // tabsSwiper 
 
-      const tabSwiper = new Swiper(".tabsSwiper", {
-        slidesPerView: 6,
-        spaceBetween: 10,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          320: { slidesPerView: 3 },
-          640: { slidesPerView: 3.5 },
-          768: { slidesPerView: 5 },
-          1024: { slidesPerView: 8 },
-        },
-      });
+      // const tabSwiper = new Swiper(".tabsSwiper", {
+      //   slidesPerView: 6,
+      //   spaceBetween: 10,
+      //   loop: true,
+      //   autoplay: {
+      //     delay: 3000,
+      //     disableOnInteraction: false,
+      //   },
+      //   breakpoints: {
+      //     325: { slidesPerView: 3 },
+      //     640: { slidesPerView: 3.5 },
+      //     768: { slidesPerView: 5 },
+      //     1024: { slidesPerView: 8 },
+      //   },
+      // });
 
 
 // scrollTopBtn

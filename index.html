@@ -30,7 +30,7 @@
       <!-- Drawer -->
       <div
         id="drawer"
-        class="fixed top-0 left-0 h-full w-1/2 bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300"
+        class="fixed top-0 left-0 h-full w-1/2 bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 overflow-y-auto"
       >
         <div class="flex items-center justify-between p-4 border-b">
           <h2 class="text-lg font-bold">Menu</h2>
@@ -43,6 +43,21 @@
               class="text-[#2C2C2C] font-medium hover:text-[#8B5E3C]"
               onclick="navigateToScheme()"
               >Scheme</a
+            >
+          </li>
+           <li>
+            <a
+              href="#"
+              class="text-[#2C2C2C] font-medium hover:text-[#8B5E3C]"
+              onclick="navigateToCatalogues()"
+              >Catalogues</a
+            >
+          </li> <li>
+            <a
+              href="#"
+              class="text-[#2C2C2C] font-medium hover:text-[#8B5E3C]"
+              onclick="navigateToQuickPurchase()"
+              >Quick Purchase</a
             >
           </li>
           <li>
@@ -273,116 +288,204 @@
         </p>
       </section>
 
- <!-- services -->
-<section class="bg-white py-4 px-4">
-  <!-- First Row -->
-  <div class="max-w-6xl mx-auto grid grid-cols-4  lg:grid-cols-5 gap-4 justify-center place-items-center">
-    <!-- Card 1 -->
-    <div onclick="navigateToScheme()"
-      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/157/157358.png" alt="Scheme"
-        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
-      <span class="text-sm font-normal md:font-medium">Scheme</span>
-    </div>
+ <!-- servies  -->
+    <div
+      class="flex flex-col items-center justify-center py-6 md:py-10 font-['Roboto']"
+    >
+      <!-- Grid Container -->
+      <div
+        id="boxContainer"
+        class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-4 md:gap-3 lg:gap-6 overflow-hidden transition-all duration-500 max-h-[13.5rem] sm:max-h-none"
+      >
+        <!-- Box 1 -->
+        <div
+          onclick="navigateToScheme()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/10150/10150740.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">Scheme</span>
+        </div>
 
-    <!-- Card 2 -->
-    <div onclick="navigateToBankDetails()"
-      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/2830/2830155.png" alt="Bank"
-        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
-      <span class="text-sm font-normal md:font-medium">Bank</span>
-    </div>
+          <div
+          onclick="navigateToCatalogues()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/29/29341.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">Catalogues</span>
+        </div>
 
-    <!-- Card 3 -->
-    <div onclick="navigateToKyc()"
-      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/18281/18281942.png" alt="KYC"
-        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
-      <span class="text-sm font-normal md:font-medium">KYC</span>
-    </div>
+          <div
+          onclick="navigateToQuickPurchase()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/1019/1019709.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">Quick <br class="md:hidden"> Purchase</span>
+        </div>
 
-    <!-- Card 4 -->
-    <div onclick="navigateToRate()"
-      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/592/592015.png" alt="Rate"
-        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
-      <span class="text-sm font-normal md:font-medium">Rate</span>
-    </div>
+        <!-- Box 2 -->
+        <div
+          onclick="navigateToBankDetails()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/2830/2830155.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">Bank</span>
+        </div>
 
-    <!-- Card 5 -->
-    <div onclick="navigateSchemeRecords()"
-      class="hidden lg:flex flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/2910/2910768.png" alt="Records"
-        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
-      <span class="text-sm font-normal md:font-medium">Records</span>
-    </div>
-  </div>
+        <!-- Box 3 -->
+        <div
+          onclick="navigateToKyc()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/10457/10457799.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">KYC</span>
+        </div>
 
-  <!-- Extra Cards (Hidden Initially) -->
-  <div id="moreCards"
-    class="max-w-6xl mx-auto grid grid-cols-4  lg:grid-cols-5 gap-4 justify-center place-items-center mt-4 transition-all duration-500 ease-in-out"
-    style="max-height: 0; opacity: 0;">
-    <!-- Card 5 -->
-     <div onclick="navigateSchemeRecords()"
-      class=" lg:hidden flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/2910/2910768.png" alt="Records"
-        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
-      <span class="text-sm font-normal md:font-medium">Records</span>
-    </div>
+        <!-- Box 4 -->
+        <div
+          onclick="navigateToRate()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/592/592015.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">Rate</span>
+        </div>
 
-    <!-- Card 6 -->
-    <div onclick="navigateToCustomerCard()"
-      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/423/423519.png" alt="Card"
-        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
-      <span class="text-sm font-normal md:font-medium">Card</span>
-    </div>
+        <!-- Box 5 -->
+        <div
+          onclick="navigateSchemeRecords()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/10811/10811965.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">Records</span>
+        </div>
 
-    <!-- Card 7 -->
-    <div onclick="navigateTransactionHistory()"
-      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/3503/3503786.png" alt="History"
-        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
-      <span class="text-sm font-normal md:font-medium">History</span>
-    </div>
+        <!-- Box 6 -->
+        <div
+          onclick="navigateToCustomerCard()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] ] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/3037/3037255.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">Card</span>
+        </div>
 
-    <!-- Card 8 -->
-    <div onclick="navigateToMyOrder()"
-      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/4556/4556009.png" alt="Order"
-        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
-      <span class="text-sm font-normal md:font-medium">Order</span>
-    </div>
+        <!-- Box 7 -->
+        <div
+          onclick="navigateTransactionHistory()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="zoom-in"
+          data-aos-delay="700"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/2277/2277956.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">History</span>
+        </div>
 
-    <!-- Card 9 -->
-    <div onclick="navigateToUserProfile()"
-      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="profile"
-        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
-      <span class="text-sm font-normal md:font-medium">Profile</span>
-    </div>
+        <!-- Box 8 -->
+        <div
+          onclick="navigateToMyOrder()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="fade-up"
+          data-aos-delay="800"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/10597/10597732.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">Order</span>
+        </div>
 
-    <!-- Card 10 -->
-    <div onclick="navigateToSetting()"
-      class="flex flex-col items-center justify-center bg-[#8D5B46] text-white rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] w-24 h-24 md:w-36 md:h-36 text-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/503/503822.png" alt="Book My Gold"
-        class="w-8 h-8 md:w-10 md:h-10 mb-2 invert" />
-      <span class="text-sm font-normal md:font-medium">Settings</span>
-    </div>
-  </div>
+        <!-- Box 9 -->
+        <div
+          onclick="navigateToUserProfile()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="zoom-in"
+          data-aos-delay="900"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">Profile</span>
+        </div>
 
-  <!-- Toggle Button -->
-  <div class="text-center mt-2">
-    <button onclick="toggleCards()" id="toggleButton"
-      class="text-[#8D5B46] hover:text-black transition">
-      <svg class="w-6 h-6 mx-auto animate-bounce" fill="none" stroke="currentColor" stroke-width="2"
-        viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-      <span class="text-sm font-medium mt-1 block">Show More</span>
-    </button>
-  </div>
-</section>
+      
+
+        <!-- Box 12 -->
+        <div
+          onclick="navigateToSetting()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
+          <img
+            class="w-10 h-10 invert"
+            src="https://cdn-icons-png.flaticon.com/128/2782/2782949.png"
+          />
+          <span class="text-sm font-semibold mt-2 text-white">Setting</span>
+        </div>
+      </div>
+
+      <!-- Toggle Button for Mobile -->
+      <div class="sm:hidden mt-4">
+        <button onclick="toggleBoxes()" class="animate-bounce text-gray-600">
+          <svg
+            id="arrowIcon"
+            class="w-8 h-8 mx-auto transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
 
       <!-- Our Collections Slider -->
       <section class="px-4 lg:px-16 py-5 relative">
@@ -610,10 +713,10 @@
     </section>
 
     <!-- Swiper tabsSwiper -->
-    <div class="flex justify-center px-4 md:px-10">
+    <!-- <div class="flex justify-center px-4 md:px-10">
       <div class="swiper tabsSwiper max-w-screen-xl w-full">
         <div class="swiper-wrapper py-8 md:py-8">
-          <!-- Slide 1 -->
+         
           <div
             class="swiper-slide w-40"
             onclick="navigateToScheme()"
@@ -635,7 +738,7 @@
             </div>
           </div>
 
-          <!-- Slide 2 -->
+       
           <div
             class="swiper-slide w-40"
             onclick="navigateToBankDetails()"
@@ -658,7 +761,7 @@
             </div>
           </div>
 
-          <!-- Slide 3 -->
+        
           <div
             class="swiper-slide w-40"
             onclick="navigateToKyc()"
@@ -677,7 +780,7 @@
             </div>
           </div>
 
-          <!-- Slide 4 -->
+       
           <div
             class="swiper-slide w-40"
             onclick="navigateToRate()"
@@ -700,7 +803,7 @@
             </div>
           </div>
 
-          <!-- Slide 5 -->
+          
           <div
             class="swiper-slide w-40"
             onclick="navigateSchemeRecords()"
@@ -723,7 +826,7 @@
             </div>
           </div>
 
-          <!-- Slide 6 -->
+         
           <div
             class="swiper-slide w-40"
             onclick="navigateToCustomerCard()"
@@ -746,7 +849,7 @@
             </div>
           </div>
 
-          <!-- Slide 7 -->
+       
           <div
             class="swiper-slide w-40"
             onclick="navigateTransactionHistory()"
@@ -769,7 +872,7 @@
             </div>
           </div>
 
-          <!-- Slide 8 -->
+         
           <div
             class="swiper-slide w-40"
             onclick="navigateToMyOrder()"
@@ -792,7 +895,7 @@
             </div>
           </div>
 
-          <!-- Slide 9 -->
+        
           <div
             class="swiper-slide w-40"
             onclick="navigateToUserProfile()"
@@ -815,7 +918,7 @@
             </div>
           </div>
 
-          <!-- Slide 10 -->
+         
           <div
             class="swiper-slide w-40"
             onclick="navigateToSetting()"
@@ -839,7 +942,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
       <!-- scheme section  -->
 
