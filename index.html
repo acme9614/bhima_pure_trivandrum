@@ -73,6 +73,9 @@
         <li>
           <a href="#" class="text-[#2C2C2C] font-medium hover:text-[#8B5E3C]" onclick="navigateToMyOrder()">Order</a>
         </li>
+          <li>
+          <a href="#" class="text-[#2C2C2C] font-medium hover:text-[#8B5E3C]" onclick="navigateToARVirtualTryOn()">Virtual Try-On</a>
+        </li>
         <li>
           <a href="#" class="text-[#2C2C2C] font-medium hover:text-[#8B5E3C]"
             onclick="navigateToUserProfile()">Profile</a>
@@ -187,7 +190,7 @@
     <div class="flex flex-col items-center justify-center py-6 md:py-10 font-['Roboto']">
       <!-- Grid Container -->
       <div id="boxContainer"
-        class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-4 md:gap-3 lg:gap-6 overflow-hidden transition-all duration-500 max-h-[13.5rem] sm:max-h-none">
+        class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4 md:gap-3 lg:gap-6 overflow-hidden transition-all duration-500 max-h-[13.5rem] sm:max-h-none">
         <!-- Box 1 -->
         <div onclick="navigateToScheme()"
           class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
@@ -264,6 +267,13 @@
           data-aos="fade-up" data-aos-delay="800">
           <img class="w-10 h-10 invert" src="https://cdn-icons-png.flaticon.com/128/10597/10597732.png" />
           <span class="text-sm font-semibold mt-2 text-white">Order</span>
+        </div>
+
+          <div onclick="navigateToARVirtualTryOn()"
+          class="w-24 h-24 md:w-28 md:h-28 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] bg-[#8D5B46] flex flex-col items-center justify-center text-center shadow-md text-black cursor-pointer"
+          data-aos="fade-up" data-aos-delay="800">
+          <img class="w-10 h-10" src="assets/virtual.png" />
+          <span class="text-sm font-semibold mt-2 text-white">Virtual<br class="block sm:hidden" /> Try-On</span>
         </div>
 
         <!-- Box 9 -->

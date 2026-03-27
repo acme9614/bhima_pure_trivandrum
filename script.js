@@ -84,7 +84,9 @@ function navigateToHomePage() {
     Toaster.postMessage('navigateToHomePage');
 }
 
-
+function navigateToARVirtualTryOn() {
+  Toaster.postMessage("navigateToARVirtualTryOn");
+}
 
 
 
